@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>StressLens</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+
+<header>
+<div class="brand">
+<div class="logo">SL</div>
+<h2>StressLens</h2>
+</div>
+</header>
+
+<div class="center">
+
+<h1>Understand <span>Analyze</span> Manage</h1>
+<p>"Your personal stress analysis journey"</p>
+
+<div class="card small-card">
+
+<input id="name" placeholder="Enter Name">
+
+<select id="gender">
+<option value="">Select Gender</option>
+<option value="female">Female</option>
+<option value="male">Male</option>
+</select>
+
+<button onclick="nextPage()">Submit</button>
+
+</div>
+</div>
+</div>
+
+<!-- FEMALE PAGE -->
+<div id="female" class="page pink">
+
+<header>
+<div class="brand">
+<div class="logo white">SL</div>
+<h2>StressLens</h2>
+</div>
+</header>
+
+<div class="card detail-card">
+
+<h2 id="femaleHello"></h2>
+
+<div class="grid">
+
+<select id="f_sleep">
+<option>Sleep Hours</option>
+<option>4 Hours</option>
+<option>6 Hours</option>
+<option>8 Hours</option>
+<option>9+ Hours</option>
+</select>
+
+<select id="f_work">
+<option>Study / Work Hours</option>
+<option>2 Hours</option>
+<option>5 Hours</option>
+<option>8 Hours</option>
+<option>10+ Hours</option>
+</select>
+
+<select id="f_screen">
+<option>Screen Time</option>
+<option>1-2 Hours</option>
+<option>3-5 Hours</option>
+<option>6+ Hours</option>
+</select>
+
+<select id="f_break">
+<option>Break Time</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+</select>
+
+<select id="f_activity">
+<option>Physical Activity</option>
+<option>Daily</option>
+<option>Sometimes</option>
+<option>Rarely</option>
+<option>Never</option>
+</select>
+
+</div>
+
+<button class="pink-btn" onclick="showResult('female')">
+Analyze Stress
+</button>
+
+</div>
+</div>
+
+<!-- MALE PAGE -->
+<div id="male" class="page blue">
+
+<header>
+<div class="brand">
+<div class="logo white">SL</div>
+<h2>StressLens</h2>
+</div>
+</header>
+
+<div class="card detail-card">
+
+<h2 id="maleHello"></h2>
+
+<div class="grid">
+
+<select id="m_sleep">
+<option>Sleep Hours</option>
+<option>4 Hours</option>
+<option>6 Hours</option>
+<option>8 Hours</option>
+<option>9+ Hours</option>
+</select>
+
+<select id="m_work">
+<option>Study / Work Hours</option>
+<option>2 Hours</option>
+<option>5 Hours</option>
+<option>8 Hours</option>
+<option>10+ Hours</option>
+</select>
+
+<select id="m_screen">
+<option>Screen Time</option>
+<option>1-2 Hours</option>
+<option>3-5 Hours</option>
+<option>6+ Hours</option>
+</select>
+
+<select id="m_break">
+<option>Break Time</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+</select>
+
+<select id="m_activity">
+<option>Physical Activity</option>
+<option>Daily</option>
+<option>Sometimes</option>
+<option>Rarely</option>
+<option>Never</option>
+</select>
+
+</div>
+
+<button class="blue-btn" onclick="showResult('male')">
+Analyze Stress
+</button>
+
+</div>
+</div>
+
+<!-- RESULT PAGE -->
+<div id="result" class="page">
+
+<header>
+<div class="brand">
+<div class="logo">SL</div>
+<h2>StressLens</h2>
+</div>
+</header>
+
+<div class="dashboard">
+
+<h1 id="resultHello"></h1>
+
+<h2>Your Stress Analysis</h2>
+
+<div class="progress-box">
+<div id="progress"></div>
+</div>
+
+<h2 id="percentage"></h2>
+<h3 id="status"></h3>
+
+<div class="info">
+
+<h3>Possible Reasons</h3>
+<p id="reasons"></p>
+
+<h3>Suggestions</h3>
+<p id="suggestions"></p>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
